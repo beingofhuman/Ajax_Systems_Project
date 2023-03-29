@@ -32,7 +32,8 @@ def test_login(driver, email, password):
     "email, password",
     [
         ("incorrect_email@example.co", "qa_automation_password"),
-        ("qa.ajax.app.automation@gmail.com", "incorrect_password")
+        ("qa.ajax.app.automation@gmail.com", "incorrect_password"),
+        ("incorrect_email@example.co", "incorrect_password")
     ]
 )
 def test_login_incorrect(driver, email, password):
