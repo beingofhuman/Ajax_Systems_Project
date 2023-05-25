@@ -1,5 +1,5 @@
 from .page import Page
-import time
+
 
 class LoginPage(Page):
     def login(self, email, password):
@@ -12,4 +12,4 @@ class LoginPage(Page):
         password_field.send_keys(password)
 
         self.click_element("com.ajaxsystems:id/next")
-        time.sleep(5)
+        
